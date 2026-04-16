@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #ffffff, #dfe9f3);
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Weather Icon Animation */
+#result img {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Icon */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
